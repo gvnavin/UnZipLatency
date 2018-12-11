@@ -15,14 +15,21 @@ public class Unzip2 {
 
   public static void main(String[] args) throws IOException {
 
-//    for (int i = 0; i < 10; i++) {
+    File file = new File("output/Question");
+//    System.out.println("file = " + file);
+    boolean delete = file.delete();
+
+    for (int i = 0; i < 50; i++) {
+      file = new File("output/Question");
+//    System.out.println("file = " + file);
+      delete = file.delete();
     unzip();
 //    Files.delete(Paths.get("output/Question"));
-    final File file = new File("output/Question");
-    System.out.println("file = " + file);
-    final boolean delete = file.delete();
-    System.out.println("delete = " + delete);
-//    }
+    file = new File("output/Question");
+//    System.out.println("file = " + file);
+    delete = file.delete();
+//    System.out.println("delete = " + delete);
+    }
 
   }
 
