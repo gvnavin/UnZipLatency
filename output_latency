@@ -1,3 +1,7 @@
+Why first call takes time
+https://stackoverflow.com/questions/31314269/java-why-is-calling-a-method-for-the-the-first-time-slower
+JIT Warmup
+class loading
 latency = 201
 latency = 33
 latency = 29
